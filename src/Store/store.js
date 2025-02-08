@@ -4,7 +4,7 @@ const initialState = {
   timerSideBar: true,
   token: null,
   numberPhone: "0000",
-  chabk: "back.dvst.ir",
+  chabk: "test.dvst.ir",
   dataBuy: [],
   productFilter: {
     filterHadProduct: "",

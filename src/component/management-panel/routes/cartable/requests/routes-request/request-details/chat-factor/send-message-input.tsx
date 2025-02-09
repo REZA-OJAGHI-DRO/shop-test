@@ -57,7 +57,7 @@ const SendMessageInput: FC<Props> = ({
         currentUserType: 0,
         messageContent: value,
         receiverType: 1,
-        receiverUserId: "pMYyDvloqDzXcqzgo8pryQ==",
+        receiverUserId: contactUserId,
         reference: factorId || undefined,
         referenceType: 1 || undefined,
       });

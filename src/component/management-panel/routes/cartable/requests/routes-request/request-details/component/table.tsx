@@ -565,7 +565,7 @@ const Table: FC<Props> = ({ order, onStatusChange }) => {
         >
           <div className="w-full h-full">
             <ChatFactor
-              shopperUserId={order?.shopperId}
+              shopperUserId={order?.shopperUserId}
               factorId={order?.id}
               shopperName={order?.shopperName}
             />

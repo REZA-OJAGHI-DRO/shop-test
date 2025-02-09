@@ -37,7 +37,7 @@ const ChatFactor: FC<Props> = ({ shopperUserId , factorId }) => {
     queryFn: () =>
       chatService.getChatMessages({
         filter: {
-          contactUserId:"pMYyDvloqDzXcqzgo8pryQ==",
+          contactUserId:shopperUserId,
           contactUserType: 1,
           currentUserType: 0,
           // referenceType: 1,
@@ -99,22 +99,3 @@ const ChatFactor: FC<Props> = ({ shopperUserId , factorId }) => {
 
 export default ChatFactor;
 
-{
-  /* <div className="fixed top-0 z-20 flex w-full items-center justify-between bg-v2-accent p-4 pt-[18px] text-v2-neutral-1001 shadow-[0_2px_4px_rgba(189,189,189,0.35)]">
-          <div className="flex items-center gap-3">
-            <figure className="flex size-10 items-center justify-center overflow-hidden rounded-full border-2 border-v2-neutral-1003 bg-v2-neutral-1007">
-          <ImageIcon className="size-4" />
-        </figure>
-            <div className="text-xs">
-          {chatList.isPending ? (
-            <Skeleton className="h-3 w-16 rounded-sm" />
-          ) : (
-            <h1 className="mb-[5px] font-medium">{`چت با تامین کننده ${chatItem?.contact?.name || searchParams.get("contactname") || ""}`}</h1>
-          )}
-          {searchParams.get("refcode") ? (
-            <p>{`درباره درخواست ${searchParams.get("refcode")}`}</p>
-          ) : null}
-        </div>
-          </div>
-        </div> */
-}

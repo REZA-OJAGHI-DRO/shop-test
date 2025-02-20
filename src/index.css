@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/font/IRANSans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-button {
+  background-color: #97979775;
+  cursor: pointer;
+  /* color: transparent; */
+}
+
+.gridArea {
+  grid-area: 1/1/2/2;
+}
+
+.box {
+  width: calc(100% - 45px);
+}
+
+.h-calc {
+  height: calc(100% - 55px);
+}
+.h2-calc {
+  height: calc(100vh - 55px);
+}
+.h3-calc {
+  height: calc(92vh - 150px);
+}
+.w-calc {
+  width: calc(100% - 100px);
+}
+.w-calc2 {
+  width: calc(100% - 140px);
+}
+.w-calc3 {
+  width: calc(100% - 180px);
+}
+.w-calc4 {
+  width: calc(100% - 265px);
+}
+
+.translateZ {
+  transform: perspective(800) translateZ(-100) !important;
+}
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      border: 1px solid gainsboro;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .3);
+      height: 100%;
+      
+      Center slide text vertically
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      
+      .swiper-slide img {
+        
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      } */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 10px !important;
+  /* padding: 10px !important; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 0 0 0;
+
+    --card: 3 7 18;
+    --card-foreground: 249 250 251;
+
+    --popover: 230 230 230;
+    --popover-foreground: 133 133 133;
+
+    --primary: 178 122 255;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 150 150 150;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 31 41 55;
+    --muted-foreground: 156 163 175;
+
+    --accent: 132 194 0;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 255 0 0;
+    --destructive-foreground: 249 250 251;
+
+    --light-gray: 128 128 128;
+    --gray: 102 102 102;
+    --dark-gray: 77 77 77;
+    --very-dark-gray: 66 66 66;
+    --gray-foreground: 186 186 186;
+
+    --border: 31 41 55;
+    --input: 230 230 230;
+    --ring: 255 255 255;
+    --chart-1: 38 98 217;
+    --chart-2: 46 184 138;
+    --chart-3: 232 140 48;
+    --chart-4: 175 87 219;
+    --chart-5: 226 54 112;
+
+    --radius: 0.5rem;
+
+    --v2-primary-1: 41 41 54;
+    --v2-primary-1009: 97 97 106;
+    --v2-primary-1008: 130 130 138;
+    --v2-primary-1007: 164 164 169;
+    --v2-primary-1006: 190 190 194;
+    --v2-primary-1005: 212 212 214;
+    --v2-primary-1004: 228 228 230;
+    --v2-primary-1003: 241 241 242;
+    --v2-primary-1002: 250 250 251;
+    --v2-primary-1001: 254 254 254;
+
+    --v2-secondary-1: 237 32 39;
+    --v2-secondary-1-1009: 245 39 65;
+    --v2-secondary-1-1008: 245 129 133;
+    --v2-secondary-1-1007: 247 160 163;
+    --v2-secondary-1-1006: 250 188 190;
+    --v2-secondary-1-1005: 251 209 210;
+    --v2-secondary-1-1004: 253 228 229;
+    --v2-secondary-1-1003: 254 242 242;
+    --v2-secondary-1-1002: 255 250 250;
+    --v2-secondary-1-1001: 255 255 255;
+
+    --v2-secondary-2: 165 56 56;
+    --v2-secondary-2-1009: 183 96 96;
+    --v2-secondary-2-1008: 199 131 131;
+    --v2-secondary-2-1007: 212 161 161;
+    --v2-secondary-2-1006: 225 188 188;
+    --v2-secondary-2-1005: 234 209 209;
+    --v2-secondary-2-1004: 243 227 227;
+    --v2-secondary-2-1003: 249 242 242;
+    --v2-secondary-2-1002: 249 242 242;
+    --v2-secondary-2-1001: 255 255 255;
+
+    --v2-accent: 25 143 137;
+    --v2-accent-1009: 88 174 169;
+    --v2-accent-1008: 146 202 199;
+    --v2-accent-1007: 163 210 208;
+    --v2-accent-1006: 185 221 219;
+    --v2-accent-1005: 205 231 230;
+    --v2-accent-1004: 225 241 240;
+    --v2-accent-1003: 242 251 251;
+    --v2-accent-1002: 250 254 253;
+    --v2-accent-1001: 254 255 255;
+
+    --v2-neutral: 41 41 54;
+    --v2-neutral-1009: 97 97 106;
+    --v2-neutral-1008: 130 130 138;
+    --v2-neutral-1007: 164 164 169;
+    --v2-neutral-1006: 190 190 194;
+    --v2-neutral-1005: 212 212 214;
+    --v2-neutral-1004: 228 228 230;
+    --v2-neutral-1003: 241 241 242;
+    --v2-neutral-1002: 250 250 251;
+    --v2-neutral-1001: 254 254 254;
+
+    --v2-green: 16 126 24;
+  }
+  .dark {
+    --background: 36 36 36;
+    --foreground: 255 255 255;
+
+    --card: 3 7 18;
+    --card-foreground: 249 250 251;
+
+    --popover: 230 230 230;
+    --popover-foreground: 133 133 133;
+
+    --primary: 178 122 255;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 150 150 150;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 31 41 55;
+    --muted-foreground: 156 163 175;
+
+    --accent: 132 194 0;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 255 0 0;
+    --destructive-foreground: 249 250 251;
+
+    --light-gray: 128 128 128;
+    --gray: 102 102 102;
+    --dark-gray: 77 77 77;
+    --very-dark-gray: 66 66 66;
+    --gray-foreground: 186 186 186;
+
+    --border: 31 41 55;
+    --input: 230 230 230;
+    --input-2: 217 217 217;
+    --ring: 209 213 219;
+    --chart-1: 38 98 217;
+    --chart-2: 46 184 138;
+    --chart-3: 232 140 48;
+    --chart-4: 175 87 219;
+    --chart-5: 226 54 112;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #d9d9d9;
+
+  @media (max-width: 640px) {
+    border-radius: 1px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #d9d9d9;
+
+  @media (max-width: 640px) {
+    width: 3px;
+    height: 7px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+  background-color: #656565;
+
+  @media (max-width: 640px) {
+    border-radius: 3px;
+  }
+}

@@ -48,14 +48,14 @@ const FormIssuanceOfCertificate = ({
     onSuccess: (result) => {
       setMessage(result.error ? result.error : result.message);
       if (result.isSuccess) {
-<<<<<<< HEAD
+
         reset({ shopperLicense: "", date: "" });
         setShopperLicense("");
         setDate("");
         setSelectedId("");
         setOpenModal(false);
         setTimeout(() => setLoad(false), 1500);
-=======
+
         reset({shopperLicense});
         setSelectedId('')
         setShopperLicense('')
@@ -64,7 +64,7 @@ const FormIssuanceOfCertificate = ({
           
           setLoad(false);
         }, 1500);
->>>>>>> dbc6aa0f1dbeb82620e4cd2257119657aae5c80e
+
         setCheck((prev) => ({ ...prev, check1: true }));
         setTimeout(() => setCheck({ check1: false, check2: false }), 5000);
       } else {

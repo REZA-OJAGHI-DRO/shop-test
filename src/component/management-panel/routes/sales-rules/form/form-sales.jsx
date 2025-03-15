@@ -22,11 +22,7 @@ const FormSales = ({
   setUpdateTable,
   updateTable,
   setCheckData,
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> dbc6aa0f1dbeb82620e4cd2257119657aae5c80e
   setSearchData,
 
   options1,

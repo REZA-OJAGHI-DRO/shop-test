@@ -1,0 +1,24 @@
+{
+    "short_name": "دوست",  
+    "name": "دوست",  
+    "icons": [
+      {
+        "src": "./img/logo.jpg",  
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./img/logo.jpg",  
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",  
+    "display": "standalone",  
+    "background_color": "#ffffff", 
+    "theme_color": "#000000", 
+    "orientation": "portrait",  
+    "scope": "/", 
+    "description": "An awesome PWA built with React",
+    "lang": "en-US"  
+  }

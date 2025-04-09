@@ -1,5 +1,5 @@
 export function postFile(file, token, type) {
-  const url = `https://back.dvst.ir/File/File/Upload`;
+  const url = `https://test.dvst.ir/File/File/Upload`;
 
   const formData = new FormData();
   formData.append("File", file);
@@ -28,7 +28,7 @@ export function postFile(file, token, type) {
 }
 
 export function postFileExcel(file, token) {
-  const url = `https://back.dvst.ir/Product/Good/UpdateWithExcel`;
+  const url = `https://test.dvst.ir/Product/Good/UpdateWithExcel`;
 
   const formData = new FormData();
   formData.append("File", file);

@@ -2,7 +2,7 @@ import { GetCookie } from "@/function/cookie/cookie";
 import { ApiResponse } from "@/types/common-types";
 // import Cookies from "js-cookie";
 
-const BASE_URL = "https://back.dvst.ir";
+const BASE_URL = "https://test.dvst.ir";
 
 const getAuthHeaders = (contentType?: string): HeadersInit => {
   const token = GetCookie("authToken");

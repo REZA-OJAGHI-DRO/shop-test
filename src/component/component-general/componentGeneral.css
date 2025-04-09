@@ -1,0 +1,37 @@
+/* استایل های کامپوننت سلکت************ */
+
+/* استایل کلی برای Select */
+.custom-select .ant-select-selector {
+    background-color: #ffffff !important;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .3) !important;
+    color: #252525 !important;
+    padding: 8px 16px !important;
+    border-radius: 10px !important;
+    border: none !important;
+  }
+  
+  /* فاصله‌دهی بین گزینه‌ها و استایل گزینه‌ها */
+  .custom-select .ant-select-dropdown .ant-select-item-option {
+    font-size: 16px !important;
+    padding: 8px 16px !important;
+    margin: 4px 0 !important;
+    border-radius: 8px !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* پس‌زمینه محو گزینه‌ها هنگام hover */
+  .custom-select .ant-select-dropdown .ant-select-item-option-active {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 8px !important;
+  }
+  
+  /* استایل گزینه انتخاب شده */
+  .custom-select .ant-select-dropdown .ant-select-item-option-selected {
+    background-color: rgba(186, 231, 255, 0.7) !important;
+    color: #0056b3 !important;
+    font-weight: bold !important;
+    border-radius: 8px !important;
+  }
+  
+  
